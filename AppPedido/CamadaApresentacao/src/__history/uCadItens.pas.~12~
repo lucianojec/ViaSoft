@@ -1,0 +1,75 @@
+unit uCadItens;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.ExtCtrls, Data.DBXDataSnap, Data.DBXCommon, IPPeerClient, Vcl.DBCtrls,
+  Data.SqlExpr, Datasnap.DBClient, Datasnap.DSConnect, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmCadItens = class(TForm)
+    Panel1: TPanel;
+    dbgCadItens: TDBGrid;
+    DSProviderConnection1: TDSProviderConnection;
+    cdsItem: TClientDataSet;
+    dsItem: TDataSource;
+    SQLConnection1: TSQLConnection;
+    btnIncluir: TBitBtn;
+    btnAlterar: TBitBtn;
+    btnExcluir: TBitBtn;
+    btnVoltar: TBitBtn;
+    btnAvancar: TBitBtn;
+    btnSalvar: TBitBtn;
+    procedure btnIncluirClick(Sender: TObject);
+    procedure btnAlterarClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure btnVoltarClick(Sender: TObject);
+    procedure btnAvancarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadItens: TfrmCadItens;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCadItens.btnAlterarClick(Sender: TObject);
+begin
+  cdsItem.Edit;
+end;
+
+procedure TfrmCadItens.btnIncluirClick(Sender: TObject);
+begin
+  cdsItem.Append;
+end;
+
+procedure TfrmCadItens.btnSalvarClick(Sender: TObject);
+begin
+
+  if cdsItem.State in dsEditModes then
+  begin
+    cdsItem.Post;
+    cdsItem.ApplyUpdates(-1);
+  end;
+
+end;
+
+procedure TfrmCadItens.btnVoltarClick(Sender: TObject);
+begin
+  cdsItem.Prior;
+end;
+
+procedure TfrmCadItens.btnAvancarClick(Sender: TObject);
+begin
+  cdsItem.Next;
+end;
+
+
+end.

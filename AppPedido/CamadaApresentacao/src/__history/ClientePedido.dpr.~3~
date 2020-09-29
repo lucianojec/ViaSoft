@@ -1,0 +1,16 @@
+program ClientePedido;
+
+uses
+  Vcl.Forms,
+  uPrincipal in 'uPrincipal.pas' {frmPrincipal},
+  uCadItens in 'uCadItens.pas' {frmCadItens},
+  uCadPedidos in 'uCadPedidos.pas' {frmCadPedido};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.Run;
+end.

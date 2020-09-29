@@ -1,0 +1,43 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Principal'
+  ClientHeight = 390
+  ClientWidth = 780
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Left = 248
+    Top = 72
+    object Cadastr1: TMenuItem
+      Caption = '&Cadastro'
+      object Itens1: TMenuItem
+        Caption = '&Itens'
+        OnClick = Itens1Click
+      end
+      object Pedidos1: TMenuItem
+        Caption = '&Pedidos'
+        OnClick = Pedidos1Click
+      end
+    end
+    object Relatrio1: TMenuItem
+      Caption = '&Relat'#243'rio'
+      object Item1: TMenuItem
+        Caption = '&Itens'
+        OnClick = Item1Click
+      end
+      object Pedido1: TMenuItem
+        Caption = '&Pedidos'
+        OnClick = Pedido1Click
+      end
+    end
+  end
+end

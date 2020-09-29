@@ -1,0 +1,62 @@
+unit uCadPedidos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.ExtCtrls, Data.DBXDataSnap, Data.DBXCommon, IPPeerClient,
+  Datasnap.DBClient, Datasnap.DSConnect, Data.SqlExpr, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmCadPedido = class(TForm)
+    Panel1: TPanel;
+    dbgCadPedidos: TDBGrid;
+    SQLConnection1: TSQLConnection;
+    DSProviderConnection1: TDSProviderConnection;
+    cdsPedidos: TClientDataSet;
+    dsPedidos: TDataSource;
+    btnIncluir: TBitBtn;
+    btnAlterar: TBitBtn;
+    btnExcluir: TBitBtn;
+    btnVoltar: TBitBtn;
+    btnAvancar: TBitBtn;
+    btnSalvar: TBitBtn;
+    procedure btnIncluirClick(Sender: TObject);
+    procedure btnAlterarClick(Sender: TObject);
+    procedure btnExcluirClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadPedido: TfrmCadPedido;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCadPedido.btnAlterarClick(Sender: TObject);
+begin
+  cdsPedidos.Append
+end;
+
+procedure TfrmCadPedido.btnExcluirClick(Sender: TObject);
+begin
+  cdsPedidos.Delete;
+end;
+
+procedure TfrmCadPedido.btnIncluirClick(Sender: TObject);
+begin
+  cdsPedidos.Edit;
+end;
+
+procedure TfrmCadPedido.btnSalvarClick(Sender: TObject);
+begin
+  cdsPedidos.Post
+end;
+
+end.

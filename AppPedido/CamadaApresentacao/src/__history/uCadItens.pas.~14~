@@ -1,0 +1,121 @@
+unit uCadItens;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.ExtCtrls, Data.DBXDataSnap, Data.DBXCommon, IPPeerClient, Vcl.DBCtrls,
+  Data.SqlExpr, Datasnap.DBClient, Datasnap.DSConnect, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmCadItens = class(TForm)
+    DSProviderConnection1: TDSProviderConnection;
+    cdsItem: TClientDataSet;
+    dsItem: TDataSource;
+    SQLConnection1: TSQLConnection;
+    btnIncluir: TBitBtn;
+    btnAlterar: TBitBtn;
+    btnExcluir: TBitBtn;
+    btnSalvar: TBitBtn;
+    edtDescricao: TLabeledEdit;
+    edtCodigo: TLabeledEdit;
+    cdsItemID_ITEM: TIntegerField;
+    cdsItemDESC_ITEM: TStringField;
+    cdsItemID_PED: TIntegerField;
+    cdsItemID_ITEMSEQ: TIntegerField;
+    Panel1: TPanel;
+    DBGrid1: TDBGrid;
+    procedure btnIncluirClick(Sender: TObject);
+    procedure btnAlterarClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure btnVoltarClick(Sender: TObject);
+    procedure btnAvancarClick(Sender: TObject);
+  private
+    procedure LimpaCampos;
+    { Private declarations }
+  public
+    { Public declarations }
+    function ValidaCamposObrigatorios: Boolean;
+  end;
+
+var
+  frmCadItens: TfrmCadItens;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCadItens.btnAlterarClick(Sender: TObject);
+begin
+  cdsItem.Edit;
+end;
+
+procedure TfrmCadItens.btnIncluirClick(Sender: TObject);
+begin
+
+  if ValidaCamposObrigatorios then
+  begin
+
+    cdsItem.Append;
+    cdsItem.FieldByName('ID_ITEM').Value := edtCodigo.Text;
+    cdsItem.FieldByName('DESC_ITEM').Value := edtDescricao.Text;
+    cdsItem.FieldByName('ID_PED').Value := edtCodigo.Text;
+    cdsItem.FieldByName('ID_ITEMSEQ').Value := edtCodigo.Text;
+
+  end
+  else
+  begin
+
+    ShowMessage('Favor informar os campos!');
+    edtCodigo.SetFocus;
+
+  end;
+end;
+
+procedure TfrmCadItens.btnSalvarClick(Sender: TObject);
+begin
+
+  if cdsItem.State in dsEditModes then
+  begin
+    cdsItem.Post;
+    cdsItem.ApplyUpdates(-1);
+    LimpaCampos;
+  end;
+
+end;
+
+procedure TfrmCadItens.btnVoltarClick(Sender: TObject);
+begin
+  cdsItem.Prior;
+end;
+
+function TfrmCadItens.ValidaCamposObrigatorios: Boolean;
+begin
+
+  Result := true;
+  if (edtCodigo.Text = '') and ( edtDescricao.Text = '') then
+    Result := false;
+
+
+end;
+
+procedure TfrmCadItens.LimpaCampos;
+begin
+
+  edtCodigo.Clear;
+  edtDescricao.Clear;
+
+
+
+end;
+
+
+
+procedure TfrmCadItens.btnAvancarClick(Sender: TObject);
+begin
+  cdsItem.Next;
+end;
+
+
+end.

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/28 14:34:11.000.674,=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/28 16:25:09.572,=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/28 16:25:09.852,=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2020/09/28 16:25:15.440,=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2020/09/28 21:20:46.793,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaNegocio\ServerContainerUnit1.pas=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2020/09/28 21:20:46.793,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaNegocio\ServerContainerUnit1.dfm=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.dfm</Transaction>
+    <Transaction>2020/09/28 21:20:57.139,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaNegocio\uPrincipal.dfm=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/09/28 21:20:57.139,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaNegocio\uPrincipal.pas=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/28 21:21:00.251,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaNegocio\ServerMethodsUnit1.pas=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2020/09/28 21:21:00.251,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaNegocio\ServerMethodsUnit1.dfm=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.dfm</Transaction>
+    <Transaction>2020/09/28 21:21:19.149,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaNegocio\Servidor.dproj=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/28 13:47:59.000.746,=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/28 13:51:24.000.647,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uPrincipal.pas=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/28 13:51:24.000.647,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uPrincipal.dfm=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/09/28 13:51:51.000.467,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\ClientePedido.dproj=C:\Users\lucia\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/09/28 14:09:50.000.312,=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.pas</Transaction>
+    <Transaction>2020/09/28 14:10:44.000.821,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uCadItens.dfm=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.dfm</Transaction>
+    <Transaction>2020/09/28 14:10:44.000.821,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uCadItens.pas=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.pas</Transaction>
+    <Transaction>2020/09/28 14:11:42.000.027,=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.pas</Transaction>
+    <Transaction>2020/09/28 14:12:37.000.292,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uCadPedidos.dfm=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.dfm</Transaction>
+    <Transaction>2020/09/28 14:12:37.000.292,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uCadPedidos.pas=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.pas</Transaction>
+    <Transaction>2020/09/29 00:17:23.000.865,=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.pas</Transaction>
+    <Transaction>2020/09/29 00:19:24.000.111,=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\ModelSupport_ClientePedido\default.txaPackage</Transaction>
+    <Transaction>2020/09/29 00:19:32.000.604,=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\ModelSupport_ClientePedido\default.txvpck</Transaction>
+    <Transaction>2020/09/29 00:27:37.000.320,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uReport.dfm=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.dfm</Transaction>
+    <Transaction>2020/09/29 00:27:37.000.320,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uReport.pas=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.pas</Transaction>
+    <Transaction>2020/09/29 00:54:11.165,=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.pas</Transaction>
+    <Transaction>2020/09/29 00:54:18.806,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uDM.dfm=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.dfm</Transaction>
+    <Transaction>2020/09/29 00:54:18.806,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uDM.pas=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.pas</Transaction>
+    <Transaction>2020/09/29 01:27:27.320,=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.pas</Transaction>
+    <Transaction>2020/09/29 01:29:27.915,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uReportPedidos.pas=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.pas</Transaction>
+    <Transaction>2020/09/29 01:29:27.915,C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\uReportPedidos.dfm=C:\Users\lucia\Desktop\ViaSoft\AppPedido\CamadaApresentacao\src\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
